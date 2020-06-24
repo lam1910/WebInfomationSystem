@@ -47,6 +47,20 @@
 \pagenumbering{arabic}
 \tableofcontents
 \newpage
+\begin{thebibliography}{}
+\bibitem{website}Payment gateway: \url{https://en.wikipedia.org/wiki/Payment_gateway}
+\bibitem{website}Merchant services: \url{https://en.wikipedia.org/wiki/Merchant_services}
+\bibitem{website}Bricks and clicks: \url{https://en.wikipedia.org/wiki/Bricks_and_clicks}
+\bibitem{website}Brick and mortar: \url{https://en.wikipedia.org/wiki/Brick_and_mortar}
+\bibitem{website}Acquiring bank: \url{https://en.wikipedia.org/wiki/Acquiring_bank}
+\bibitem{website}Card association: \url{https://en.wikipedia.org/wiki/Card_association}
+\bibitem{website}VnPay home page: \url{https://vnpay.vn/}
+\bibitem{website}Payment gateway VnPay home page: \url{https://www.vnpayment.vn/}
+\bibitem{website}VnPay features: \url{https://vnpayment.vnpay.vn/tinh-nang.htm}
+\bibitem{website}VnPay fee: \url{https://vnpayment.vnpay.vn/phi.htm}
+\bibitem{website}Documentation for API: \url{https://sandbox.vnpayment.vn/apis/docs/gioi-thieu/}
+\end{thebibliography}
+\newpage
 
 \section{Overview about payment gateway}
 \subsection{Payment gateway}
@@ -132,7 +146,6 @@
 	\item Python
 	\item java
 	\item NodeJS
-	\item For this project, I will use python code.
 \end{itemize}
 \subsection{Configuration}
 There are 2 configures to identify the website:
@@ -144,11 +157,11 @@ There are 2 configures to identify the website:
 \subsubsection{Create a payment URL}
 Payment URL contains payment details like: what type of transactions it is, what bank does the customer use, what time do they send the request, How much is the transaction. 
 \subsubsection{Code IPN URL}
-IPN URl is used to get the result of processing the request on the server to the merchant using server-call-server call and the update/process the result will be done here.
+IPN URl is used to get the result of processing the request on the server to the merchant using server-call-server call and the update/process will be done here.
 \subsubsection{Code ReturnURL}
-Vnpay sends data back to user by redirecting the browser to the website that the merchant provided. This site is used to show the result of the transaction to the end user
+Vnpay sends data back to user by redirecting the browser to the website that the merchant provided. This site is used to show the result to the end user
 \subsection{Demo code}
-\begin{figure}[h!]
+\begin{figure}[h]
 	\centering
   	\begin{subfigure}[b]{\linewidth}
   		\includegraphics[width=\linewidth]{payment-1.png}
@@ -162,32 +175,17 @@ Vnpay sends data back to user by redirecting the browser to the website that the
   	\label{fig:purl}
 \end{figure}
 
-\begin{figure}[h!]
+\begin{figure}[p]
   	\includegraphics[width=\linewidth]{payment-ipn.png}
     \caption{Create IPN URL}
   	\label{fig:iurl}
 \end{figure}
 
-\begin{figure}[h!]
+\begin{figure}[h]
   	\includegraphics[width=\linewidth]{payment-re.png}
     \caption{Create ReturnURL}
   	\label{fig:rurl}
 \end{figure}
 
-
-
-\begin{thebibliography}{}
-\bibitem{website}Payment gateway: \url{https://en.wikipedia.org/wiki/Payment_gateway}
-\bibitem{website}Merchant services: \url{https://en.wikipedia.org/wiki/Merchant_services}
-\bibitem{website}Bricks and clicks: \url{https://en.wikipedia.org/wiki/Bricks_and_clicks}
-\bibitem{website}Brick and mortar: \url{https://en.wikipedia.org/wiki/Brick_and_mortar}
-\bibitem{website}Acquiring bank: \url{https://en.wikipedia.org/wiki/Acquiring_bank}
-\bibitem{website}Card association: \url{https://en.wikipedia.org/wiki/Card_association}
-\bibitem{website}VnPay home page: \url{https://vnpay.vn/}
-\bibitem{website}Payment gateway VnPay home page: \url{https://www.vnpayment.vn/}
-\bibitem{website}VnPay features: \url{https://vnpayment.vnpay.vn/tinh-nang.htm}
-\bibitem{website}VnPay fee: \url{https://vnpayment.vnpay.vn/phi.htm}
-\bibitem{website}Documentation for API: \url{https://sandbox.vnpayment.vn/apis/docs/gioi-thieu/}
-\end{thebibliography}
 
 \end{document}
